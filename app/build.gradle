@@ -25,7 +25,7 @@ android {
     
     
     
-    namespace "com.termux"
+    namespace "com.termux.xodos"
     compileSdk project.properties.compileSdkVersion.toInteger()
 //    compileSdk 34
     ndkVersion '27.1.12297006'
@@ -64,7 +64,7 @@ aaptOptions {
     }
 
     defaultConfig {
-        applicationId "com.termux"
+        applicationId "com.termux.xodos"
         minSdkVersion project.properties.minSdkVersion.toInteger()
         targetSdkVersion project.properties.targetSdkVersion.toInteger()
         versionCode 5
@@ -75,7 +75,7 @@ aaptOptions {
 
         buildConfigField "String", "TERMUX_PACKAGE_VARIANT", "\"" + project.ext.packageVariant + "\"" // Used by TermuxApplication class
 
-        manifestPlaceholders.TERMUX_PACKAGE_NAME = "com.termux"
+        manifestPlaceholders.TERMUX_PACKAGE_NAME = "com.termux.xodos"
         manifestPlaceholders.TERMUX_APP_NAME = "Termux"
         manifestPlaceholders.TERMUX_API_APP_NAME = "Termux:API"
         manifestPlaceholders.TERMUX_BOOT_APP_NAME = "Termux:Boot"

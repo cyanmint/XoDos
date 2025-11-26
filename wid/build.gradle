@@ -20,7 +20,7 @@ android {
 
         // Manifest placeholders for app metadata
         manifestPlaceholders = [
-            TERMUX_PACKAGE_NAME: "com.termux",
+            TERMUX_PACKAGE_NAME: "com.termux.xodos",
             TERMUX_APP_NAME: "Termux",
             TERMUX_WIDGET_APP_NAME: "Termux:Widget"
         ]
