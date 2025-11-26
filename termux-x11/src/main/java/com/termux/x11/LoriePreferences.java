@@ -940,7 +940,7 @@ if (p.getKey().contentEquals("wine_settings")) {
                         Intent intent0 = new Intent(ACTION_PREFERENCES_CHANGED);
                         intent0.putExtra("key", key);
                         intent0.putExtra("fromBroadcast", true);
-                        intent0.setPackage("com.termux");
+                        intent0.setPackage("com.termux.xodos");
                         context.sendBroadcast(intent0);
                     }
                     edit.commit();
@@ -991,7 +991,7 @@ if (p.getKey().contentEquals("wine_settings")) {
 
             in.detachFd();
             bundle.putBinder(null, iface);
-            i.setPackage("com.termux");
+            i.setPackage("com.termux.xodos");
             i.putExtra(null, bundle);
             if (getuid() == 0 || getuid() == 2000)
                 i.setFlags(0x00400000 /* FLAG_RECEIVER_FROM_SHELL */);

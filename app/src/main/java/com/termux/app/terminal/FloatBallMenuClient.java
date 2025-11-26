@@ -52,7 +52,7 @@ public class FloatBallMenuClient {
             mFloatballManager.setOnFloatBallClickListener(() -> {
                 if (mAppNotOnFront) {
                     PackageManager packageManager = mTermuxActivity.getPackageManager();
-                    Intent intent = packageManager.getLaunchIntentForPackage("com.termux");
+                    Intent intent = packageManager.getLaunchIntentForPackage("com.termux.xodos");
                     if (intent != null) {
 //                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
